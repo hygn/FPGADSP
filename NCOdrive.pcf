@@ -1,0 +1,11 @@
+set_io clk J3
+set_io b0 C16
+set_io b1 D16
+set_io b2 E16
+set_io b3 F16
+set_io b4 G16
+set_io b5 H16
+set_io b6 J15
+set_io b7 G14
+set_io update B16
+set_io truncate D14
