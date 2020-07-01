@@ -9,7 +9,7 @@ module nco (
 // FTW[7:0] = fraction
 reg[lutsize+7:0] addr;
 reg[lutsize+7:0] ftw;
-reg[lutsize:0] lookup;
+reg[lutsize-1:0] lookup;
 parameter lutsize = 10;
 always @(posedge clk && en) begin
     ftw[lutsize+7:8] <= Iftw;

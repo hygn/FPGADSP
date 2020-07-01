@@ -13,7 +13,7 @@ while i <= int(sys.argv[1]):
         samp = 0
     else:
         samp = i/int(sys.argv[1]) * 2 * np.pi
-    val = int(round(np.sin(samp)*(pow(2,int(sys.argv[2])-1)-1)+pow(2,int(sys.argv[2])-1)-1))
+    val = int(round(np.sin(samp)/1.3*(pow(2,int(sys.argv[2])-1)-1)+pow(2,int(sys.argv[2])-1)-1))
     code = code + "        "+ibw+"'d"+str(i)+": sine <= "+obw+"'d"+str(val)+";\n"
     i = i + 1
 code = code + "    endcase\n"

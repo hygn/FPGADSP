@@ -4,7 +4,7 @@ module ncotop(
 );
 reg[7:0] sine;
 //nco u1 (32'b00000001000000000000000000000000,1,clk,sine,cosine,update,truncate);
-nco u1 (11'd32,8'd250,clk,1,sine);
+nco u1 (10'd256,8'd0,clk,1,sine);
 assign b0 = sine[0];
 assign b1 = sine[1];
 assign b2 = sine[2];
